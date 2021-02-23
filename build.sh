@@ -22,4 +22,3 @@ git clone https://github.com/RedisJSON/RedisJSON.git
 cp Dockerfile RedisJSON/
 cd RedisJSON
 docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t jrcichra/redisjson --push .
-docker buildx imagetools inspect jrcichra/redisjson
