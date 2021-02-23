@@ -29,4 +29,4 @@ RUN set -ex;\
     mkdir -p "$LIBDIR";
 COPY --from=builder /REJSON/src/rejson.so  "$LIBDIR"
 
-CMD redis-server --save ""  --appendonly no --loadmodule /usr/lib/redis/modules/rejson.so
+CMD redis-server --loadmodule /usr/lib/redis/modules/rejson.so
